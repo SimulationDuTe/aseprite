@@ -99,7 +99,7 @@ jobs:
           export XVFB=xvfb-run
         fi
         cd build && $XVFB ctest --output-on-failure
-   - uses: actions/upload-artifact@v4
+        - uses: actions/upload-artifact@v4
         with:
         name: aseprite
         path: |
